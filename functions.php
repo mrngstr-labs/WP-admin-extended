@@ -9,7 +9,7 @@
 
 
 add_action( 'after_setup_theme', function(){
-	register_nav_menu( 'toolbar', 'Панель инструментов' );
+	register_nav_menu( 'toolbar', 'Toolbar' );
 });
 add_action( 'admin_bar_menu', 'wbtn_add_toolbar_menu', 999 );
 function wbtn_add_toolbar_menu( $toolbar ){
