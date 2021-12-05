@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Admin Extended
  * Description: This plugin extends the functionality of the Wordpress admin panel
- * Version: 0.3
+ * Version: 0.1
  * Author: Vladislav M
  * Link: https://webton.ru/wp-plugins
  */
