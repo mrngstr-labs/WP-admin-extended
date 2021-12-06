@@ -7,4 +7,6 @@ This plugin extends the functionality of the Wordpress admin panel:
 * Enables the gzip compression function;
 * Remove script\style version and source from public;
 * Limits the amount of post revisions on 10;
-* Disable XML-RPC.
+* Disable XML-RPC;
+* Remove theme version, text from footer and WP logo from admin bar;
+* Clean up UI.

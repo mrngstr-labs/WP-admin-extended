@@ -61,4 +61,24 @@ function _remove_script_version( $src ){
 if( ! defined('WP_POST_REVISIONS') ) define('WP_POST_REVISIONS', 10);
 
 add_filter('xmlrpc_enabled', '__return_false');
+
+function theme_remove_version() {
+	return '';
+}
+
+add_filter('the_generator', 'theme_remove_version');
+
+function remove_footer_admin () {
+	echo "";
+}
+
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+function wp_logo_admin_bar_remove() {
+	global $wp_admin_bar;
+
+	$wp_admin_bar->remove_menu('wp-logo');
+}
+
+add_action('wp_before_admin_bar_render', 'wp_logo_admin_bar_remove', 0);
 ?>
